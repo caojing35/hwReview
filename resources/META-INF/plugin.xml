@@ -1,0 +1,44 @@
+<idea-plugin>
+  <id>com.huawei.hwreview</id>
+  <name>Plugin display name here</name>
+  <version>1.0</version>
+  <vendor email="support@yourcompany.com" url="http://www.hauwei.com">Huawei</vendor>
+
+  <description><![CDATA[
+      Enter short description for your plugin here.<br>
+      <em>most HTML tags may be used</em>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="145.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here icon="/hwreview/plus.jpg" -->
+    <toolWindow id="HwReview" anchor="bottom"  factoryClass="HwReviewToolWindowFactory" />
+
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <group id="hwReview_Group_Menu" text="HwReview" description="Sample menu">
+      <add-to-group group-id="MainMenu" anchor="last"  />
+      <action id="hwReview_Action_Add" class="HwReviewActionAdd" text="添加意见" description="添加检视意见">
+        <add-to-group group-id="CodeMenu" anchor="first"/>
+        <keyboard-shortcut keymap="$default" first-keystroke="alt A"/>
+      </action>
+    </group>
+  </actions>
+
+</idea-plugin>
