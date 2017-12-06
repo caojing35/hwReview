@@ -11,22 +11,14 @@ import javax.swing.JButton
 
 class CodeReviewToolWindowFactory : ToolWindowFactory {
 
-    private val hideToolWindowButton: JButton? = null
-
     private var myToolWindow: ToolWindow? = null
 
-    private val myToolWindowContent = ToolWindowPanelFactory.create()
-
-    init {
-//        hideToolWindowButton!!.addActionListener {
-//            myToolWindow!!.hide(null)
-//        }
-    }
+    private val myToolWindowForm = ToolWindow()
 
     override fun createToolWindowContent(project: Project, toolWindow: ToolWindow) {
         myToolWindow = toolWindow
         val contentFactory: ContentFactory = ContentFactory.SERVICE.getInstance()
-        val content: Content = contentFactory.createContent(myToolWindowContent, "", false)
+        val content: Content = contentFactory.createContent(myToolWindowForm.contentPanel, "", false)
         toolWindow.contentManager.addContent(content)
     }
 

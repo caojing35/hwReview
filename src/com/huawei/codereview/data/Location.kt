@@ -21,6 +21,10 @@ class Location private constructor(e: AnActionEvent) {
 
     private var endLine: Int = 0
 
+    private var start: Int = 0
+
+    private var end: Int = 0
+
     private var selectCode: String? = null
 
     private val sectionCode: String? = null
@@ -57,6 +61,10 @@ class Location private constructor(e: AnActionEvent) {
             selectionModel.setSelection(startPos, endPos)
         }
 
+        this.start = selectionModel.selectionStart
+
+        this.end = selectionModel.selectionEnd
+
         this.startLine = if (selectionModel.selectionStartPosition == null) 0 else selectionModel.selectionStartPosition!!.getLine()
 
         this.endLine = if (selectionModel.selectionEndPosition == null) 0 else selectionModel.selectionEndPosition!!.getLine()
@@ -65,17 +73,9 @@ class Location private constructor(e: AnActionEvent) {
     }
 
     override fun toString(): String {
-        return "com.huawei.codereview.data.Location{" +
-                "projName='" + projName + '\'' +
-                ", projPath='" + projPath + '\'' +
-                ", absoluteFilePath='" + absoluteFilePath + '\'' +
-                ", relativeFilePath='" + relativeFilePath + '\'' +
-                ", startLine=" + startLine +
-                ", endLine=" + endLine +
-                ", selectCode='" + selectCode + '\'' +
-                ", sectionCode='" + sectionCode + '\'' +
-                '}'
+        return "Location(projName=$projName, projPath=$projPath, absoluteFilePath=$absoluteFilePath, relativeFilePath=$relativeFilePath, startLine=$startLine, endLine=$endLine, start=$start, end=$end, selectCode=$selectCode, sectionCode=$sectionCode)"
     }
+
 
     companion object {
 

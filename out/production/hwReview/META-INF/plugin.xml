@@ -27,7 +27,8 @@
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here icon="/hwreview/plus.jpg" -->
     <toolWindow id="HwReview" anchor="bottom"  factoryClass="com.huawei.codereview.toolwindow.CodeReviewToolWindowFactory" />
-
+    <applicationService serviceInterface="com.huawei.codereview.MyService"
+                        serviceImplementation="com.huawei.codereview.MyService"/>
   </extensions>
 
   <actions>
