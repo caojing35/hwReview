@@ -1,28 +1,31 @@
 package com.huawei.codereview;
 
+import com.huawei.codereview.data.ReviewItem;
 import com.huawei.codereview.data.ReviewManager;
-import com.intellij.openapi.components.PersistentStateComponent;
-import com.intellij.openapi.components.State;
-import com.intellij.openapi.components.Storage;
-import com.intellij.openapi.components.StoragePathMacros;
+import com.intellij.openapi.components.*;
 import org.jetbrains.annotations.Nullable;
 
 @State(
-        name = "reviewLogs",
-        storages = {@Storage(
-                id = "other",
-                file = StoragePathMacros.MODULE_FILE + "/reviewLog.xml"
-        )}
+        name = "hwReviewLogs",
+        storages = {
+                @Storage(
+                        id = "reviewLog",
+                        file = "hwReviewLog.xml"
+                )}
 )
-public class MyService implements PersistentStateComponent<ReviewManager.ItemContainer> {
+public class MyService implements PersistentStateComponent<ReviewManager.ItemContainer>, ProjectComponent {
     @Nullable
     @Override
     public ReviewManager.ItemContainer getState() {
-        return ReviewManager.instance.itemContainer;
+        ReviewManager.ItemContainer container = new ReviewManager.ItemContainer();
+        container.data.addAll(ReviewManager.instance.itemContainer.data);
+        return container;
     }
 
     @Override
     public void loadState(ReviewManager.ItemContainer itemContainer) {
-        ReviewManager.instance.itemContainer = itemContainer;
+        for (ReviewItem item : itemContainer.data){
+            ReviewManager.instance.add(item);
+        }
     }
 }

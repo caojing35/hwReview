@@ -1,6 +1,6 @@
 <idea-plugin>
   <id>com.huawei.hwreview</id>
-  <name>Plugin display name here</name>
+  <name>HwCodeReview</name>
   <version>1.0</version>
   <vendor email="support@yourcompany.com" url="http://www.hauwei.com">Huawei</vendor>
 
@@ -23,7 +23,12 @@
   <!-- uncomment to enable plugin in all products
   <depends>com.intellij.modules.lang</depends>
   -->
-
+  <application-components>
+    <component>
+      <implementation-class>com.huawei.codereview.MyService
+      </implementation-class>
+    </component>
+  </application-components>
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here icon="/hwreview/plus.jpg" -->
     <toolWindow id="HwReview" anchor="bottom"  factoryClass="com.huawei.codereview.toolwindow.CodeReviewToolWindowFactory" />

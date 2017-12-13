@@ -1,6 +1,7 @@
 package com.huawei.codereview.data;
 
 import javax.xml.crypto.Data;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -40,7 +41,7 @@ public class ReviewManager {
         fireDataChanged();
     }
 
-    public class ItemContainer {
+    static public class ItemContainer implements Serializable {
         public List<ReviewItem> data = new ArrayList<>();
     }
 
