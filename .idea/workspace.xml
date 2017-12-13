@@ -2,25 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6439ae29-b83a-45a0-bfab-eb5894601fcc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/huawei/codereview/MyService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/huawei/codereview/data/ReviewManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/huawei/codereview/toolwindow/ToolWindow.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/huawei/codereview/toolwindow/ToolWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hwReview.jar" afterPath="$PROJECT_DIR$/hwReview.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/hwReview/com/huawei/codereview/action/ReviewAction.class" afterPath="$PROJECT_DIR$/out/production/hwReview/com/huawei/codereview/action/ReviewAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/hwReview/com/huawei/codereview/data/Location$Companion.class" afterPath="$PROJECT_DIR$/out/production/hwReview/com/huawei/codereview/data/Location$Companion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/hwReview/com/huawei/codereview/data/Location.class" afterPath="$PROJECT_DIR$/out/production/hwReview/com/huawei/codereview/data/Location.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/hwReview/com/huawei/codereview/data/ReviewItem.class" afterPath="$PROJECT_DIR$/out/production/hwReview/com/huawei/codereview/data/ReviewItem.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/hwReview/com/huawei/codereview/toolwindow/CodeReviewToolWindowFactory.class" afterPath="$PROJECT_DIR$/out/production/hwReview/com/huawei/codereview/toolwindow/CodeReviewToolWindowFactory.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/hwReview/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/out/production/hwReview/META-INF/plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/huawei/codereview/action/ReviewAction.kt" afterPath="$PROJECT_DIR$/src/com/huawei/codereview/action/ReviewAction.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/huawei/codereview/data/Location.kt" afterPath="$PROJECT_DIR$/src/com/huawei/codereview/data/Location.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/huawei/codereview/data/ReviewItem.kt" afterPath="$PROJECT_DIR$/src/com/huawei/codereview/data/ReviewItem.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/huawei/codereview/toolwindow/CodeReviewToolWindowFactory.kt" afterPath="$PROJECT_DIR$/src/com/huawei/codereview/toolwindow/CodeReviewToolWindowFactory.kt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/huawei/codereview/data/ReviewManager.java" afterPath="$PROJECT_DIR$/src/com/huawei/codereview/data/ReviewManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/huawei/codereview/toolwindow/ToolWindow.form" afterPath="$PROJECT_DIR$/src/com/huawei/codereview/toolwindow/ToolWindow.form" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/huawei/codereview/toolwindow/ToolWindow.java" afterPath="$PROJECT_DIR$/src/com/huawei/codereview/toolwindow/ToolWindow.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,13 +18,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="plugin.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="plugin.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="23" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="23" />
+            <state relative-caret-position="437">
+              <caret line="26" column="48" lean-forward="true" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ToolWindow.form" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/huawei/codereview/toolwindow/ToolWindow.form">
+          <provider selected="true" editor-type-id="ui-designer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -57,16 +50,14 @@
       <file leaf-file-name="ToolWindow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/huawei/codereview/toolwindow/ToolWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="43" column="57" lean-forward="false" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
+            <state relative-caret-position="261">
+              <caret line="120" column="41" lean-forward="false" selection-start-line="120" selection-start-column="41" selection-end-line="120" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3624#3625#0" expanded="true" />
-                <element signature="e#3666#3667#0" expanded="true" />
-                <element signature="e#3723#3724#0" expanded="true" />
-                <element signature="e#3755#3756#0" expanded="true" />
-                <element signature="e#4092#4093#0" expanded="true" />
-                <element signature="e#4127#4128#0" expanded="true" />
+                <element signature="e#4847#4848#0" expanded="true" />
+                <element signature="e#4898#4899#0" expanded="true" />
+                <element signature="e#4944#4945#0" expanded="true" />
+                <element signature="e#4992#4993#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -95,8 +86,8 @@
       <file leaf-file-name="ReviewAction.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/huawei/codereview/action/ReviewAction.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="171">
+              <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -105,7 +96,7 @@
       <file leaf-file-name="MyService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/huawei/codereview/MyService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
+            <state relative-caret-position="209">
               <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -114,15 +105,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReviewManager.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ReviewManager.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/huawei/codereview/data/ReviewManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="26" />
+            <state relative-caret-position="337">
+              <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#386#387#0" expanded="true" />
-                <element signature="e#430#431#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -173,15 +162,15 @@
         <option value="$PROJECT_DIR$/src/ReviewItem.kt" />
         <option value="$PROJECT_DIR$/src/com/huawei/codereview/ui/ToolWindowPanelFactory.kt" />
         <option value="$PROJECT_DIR$/src/com/huawei/codereview/ui/CodeReviewToolWindow.kt" />
-        <option value="$PROJECT_DIR$/src/com/huawei/codereview/toolwindow/ToolWindow.form" />
         <option value="$PROJECT_DIR$/src/com/huawei/codereview/toolwindow/CodeReviewToolWindowFactory.kt" />
         <option value="$PROJECT_DIR$/src/com/huawei/codereview/data/ReviewItem.kt" />
         <option value="$PROJECT_DIR$/src/com/huawei/codereview/data/Location.kt" />
-        <option value="$PROJECT_DIR$/src/com/huawei/codereview/toolwindow/ToolWindow.java" />
-        <option value="$PROJECT_DIR$/src/com/huawei/codereview/data/ReviewManager.java" />
-        <option value="$PROJECT_DIR$/src/com/huawei/codereview/action/ReviewAction.kt" />
         <option value="$PROJECT_DIR$/src/com/huawei/codereview/MyService.java" />
         <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
+        <option value="$PROJECT_DIR$/src/com/huawei/codereview/toolwindow/ToolWindow.form" />
+        <option value="$PROJECT_DIR$/src/com/huawei/codereview/action/ReviewAction.kt" />
+        <option value="$PROJECT_DIR$/src/com/huawei/codereview/toolwindow/ToolWindow.java" />
+        <option value="$PROJECT_DIR$/src/com/huawei/codereview/data/ReviewManager.java" />
       </list>
     </option>
   </component>
@@ -265,9 +254,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -336,15 +322,28 @@
               <item name="codereview" type="462c0819:PsiDirectoryNode" />
               <item name="toolwindow" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="hwReview" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hwReview" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="codereview" type="462c0819:PsiDirectoryNode" />
+              <item name="toolwindow" type="462c0819:PsiDirectoryNode" />
+              <item name="ToolWindow" type="e9f4de52:FormNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/huawei/codereview/toolwindow/ToolWindow.form" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/com/huawei/codereview/toolwindow/ToolWindow.form" />
   </component>
   <component name="RecentsManager">
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
@@ -518,6 +517,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -528,7 +528,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="HwReview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32804233" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32804233" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -557,7 +557,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -700,11 +700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/huawei/codereview/toolwindow/ToolWindow.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../Java/jdk1.8.0_121/src.zip!/java/util/Arrays.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="305">
@@ -812,16 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/huawei/codereview/ui/CodeReviewToolWindow.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="e#34#74#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/openapi/actionSystem/DataContext.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -851,42 +836,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/huawei/codereview/toolwindow/ToolWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="43" column="57" lean-forward="false" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3624#3625#0" expanded="true" />
-            <element signature="e#3666#3667#0" expanded="true" />
-            <element signature="e#3723#3724#0" expanded="true" />
-            <element signature="e#3755#3756#0" expanded="true" />
-            <element signature="e#4092#4093#0" expanded="true" />
-            <element signature="e#4127#4128#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/huawei/codereview/data/ReviewManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#430#431#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/huawei/codereview/action/ReviewAction.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/openapi/components/StoragePathMacros.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
@@ -896,7 +845,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/huawei/codereview/MyService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
+        <state relative-caret-position="209">
           <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -906,9 +855,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="23" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="23" />
+        <state relative-caret-position="437">
+          <caret line="26" column="48" lean-forward="true" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/huawei/codereview/toolwindow/ToolWindow.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/huawei/codereview/ui/CodeReviewToolWindow.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#34#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/huawei/codereview/action/ReviewAction.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/huawei/codereview/toolwindow/ToolWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="120" column="41" lean-forward="false" selection-start-line="120" selection-start-column="41" selection-end-line="120" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4847#4848#0" expanded="true" />
+            <element signature="e#4898#4899#0" expanded="true" />
+            <element signature="e#4944#4945#0" expanded="true" />
+            <element signature="e#4992#4993#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/huawei/codereview/data/ReviewManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

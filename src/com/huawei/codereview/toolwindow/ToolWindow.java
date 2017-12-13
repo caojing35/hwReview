@@ -27,6 +27,8 @@ import javax.swing.table.AbstractTableModel;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.File;
@@ -37,13 +39,30 @@ import java.util.List;
 public class ToolWindow {
     private JPanel contentPanel;
     private JTable issueTab;
+    private JButton addBtn;
+    private JButton deleteBtn;
+    private JButton clearBtn;
+    private ReviewTableModel tableModel;
 
-    List<ReviewItem> data;
+    public ToolWindow() {
+        addBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        deleteBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ReviewItem item = getSelectedModel();
+                ReviewManager.instance.delete(item);
+            }
+        });
+    }
 
     private void createUIComponents() {
-        data = ReviewManager.instance.itemContainer.data;
 
-        TableModel tableModel = new ReviewTableModel();
+        tableModel = new ReviewTableModel();
         tableModel.addTableModelListener(new TableModelListener(){
             @Override
             public void tableChanged(TableModelEvent e) {
@@ -59,11 +78,11 @@ public class ToolWindow {
                 {
                     JTable table = ((JTable)e.getSource());
 
-                    int row =table.rowAtPoint(e.getPoint());
+                    int row = table.rowAtPoint(e.getPoint());
                     int modelIdx = issueTab.convertRowIndexToModel(row);
 
                     //get Item in Model
-                    ReviewItem item = data.get(modelIdx);
+                    ReviewItem item = getSelectedModel();
 
                     //get VietualFile
                     VirtualFile virtualFile = VfsUtil.findFileByIoFile(new File(item.getFile()), true);
@@ -93,9 +112,14 @@ public class ToolWindow {
         frame.setVisible(true);
     }
 
-    class ReviewTableModel extends AbstractTableModel{
+    class ReviewTableModel extends AbstractTableModel implements ReviewManager.DataListener{
 
-        List<ReviewItem> data = ToolWindow.this.data;
+        List<ReviewItem> data;
+
+        ReviewTableModel(){
+            data = ReviewManager.instance.itemContainer.data;
+            ReviewManager.instance.addListener(this);
+        }
 
         @Override
         public int getRowCount() {
@@ -115,6 +139,30 @@ public class ToolWindow {
                 return data.get(rowIndex).getDesc();
             return null;
         }
+
+        @Override
+        public void onDataChanged() {
+            this.fireTableDataChanged();
+        }
+    }
+
+    private int getSelectedIdx()
+    {
+        return issueTab.getSelectedRow();
+    }
+
+    private int getSelectedModelIdx()
+    {
+        int row =  issueTab.getSelectedRow();
+        return issueTab.convertRowIndexToModel(row);
+    }
+
+    private ReviewItem getSelectedModel()
+    {
+        int row =  issueTab.getSelectedRow();
+        int modexIdx =  issueTab.convertRowIndexToModel(row);
+        return ReviewManager.instance.itemContainer.data.get(modexIdx);
+
     }
 
     public JPanel getContentPanel() {

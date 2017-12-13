@@ -13,7 +13,6 @@ class ReviewAction  : AnAction() {
 
     override fun actionPerformed(e: AnActionEvent) {
         val location = Location.create(e)
-        Messages.showMessageDialog(location.toString(), "debuginfo", Messages.getInformationIcon())
 
         ReviewManager.instance.add(ReviewItem(1, "aa", "1_a", "C:\\Users\\caojing\\IdeaProjects\\TestPlugin\\src\\com\\company\\Main.java"))
         ReviewManager.instance.add(ReviewItem(2, "cc", "2_c", "C:\\Users\\caojing\\IdeaProjects\\TestPlugin\\src\\com\\company\\Main2.java"))
